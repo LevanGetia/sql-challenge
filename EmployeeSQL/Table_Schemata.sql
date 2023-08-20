@@ -1,5 +1,6 @@
+
 CREATE TABLE "Titles" (
-    "TitleID" varchar(50)   NOT NULL,
+    "TitleID" int   NOT NULL,
     "Title" varchar(50)   NOT NULL,
     CONSTRAINT "pk_Titles" PRIMARY KEY (
         "TitleID"
@@ -59,4 +60,3 @@ REFERENCES "Employees" ("Employee_Number");
 
 ALTER TABLE "Salaries" ADD CONSTRAINT "fk_Salaries_EmployeeNumber" FOREIGN KEY("EmployeeNumber")
 REFERENCES "Employees" ("Employee_Number");
-
